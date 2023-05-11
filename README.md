@@ -1,7 +1,7 @@
 # fx_M
-Esse repositório contém funções da Linguagem M do suplemento Power Queryutilizadas nas ferramentas do Excel e Power BI. 
+Esse repositório contém funções da Linguagem M do suplemento Power Query utilizadas nas ferramentas do Excel e Power BI. 
 
-1. Para utilização das funções em M dispobilizadas no repositório do Github deverá ser utilizada a consulta de exemplo abaixo:
+1. Para a utilização das funções em M dispobilizadas neste repositório, deverá ser utilizada a consulta de exemplo abaixo:
 
 ### Código M:
 ```js
@@ -28,7 +28,7 @@ in
 let
     // Informar Link
     
-    link = "https://github.com/HRABELLO93/fx_M/blob/main/fxVerificaErro"
+    link = "https://raw.githubusercontent.com/hrabellodev/fx_M/main/fxVerificaErro.txt"
     
     ConteudoGit = Web.Contents(link),
 
