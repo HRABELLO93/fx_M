@@ -21,3 +21,23 @@ let
 in
     Run
 ```
+
+### Exemplo:
+
+```js
+let
+    // Informar Link
+    
+    link = "https://github.com/HRABELLO93/fx_M/blob/main/fxVerificaErro"
+    
+    ConteudoGit = Web.Contents(link),
+
+    // lendo o binario do conteudo
+    Script = Text.FromBinary(ConteudoGit),
+
+    // executando
+    Run = Expression.Evaluate(Script)
+
+in
+    Run
+```
