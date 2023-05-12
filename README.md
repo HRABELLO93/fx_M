@@ -8,7 +8,7 @@ Esse repositório contém funções da Linguagem M do suplemento Power Query uti
 let
     // Informar Link
     
-    link = "Informe seu Link Aqui"
+    link = "Informe seu Link Aqui",
     
     ConteudoGit = Web.Contents(link),
 
@@ -28,7 +28,7 @@ in
 let
     // Informar Link
     
-    link = "https://raw.githubusercontent.com/hrabellodev/fx_M/main/fxVerificaErro.txt"
+    link = "https://raw.githubusercontent.com/hrabellodev/fx_M/main/fxVerificaErro.txt",
     
     ConteudoGit = Web.Contents(link),
 
