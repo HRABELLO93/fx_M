@@ -1,7 +1,8 @@
-/* 
-    Ao Invocar a Função fxVerificaErro deverá ser alterado o nome da Tabela Invocada para 'fxVerificaErro_Resumo', 
-    dessa forma a tabela será desconsiderada da seção, caso contrário haverá estouro de pilha ou looping eterno.
-*/
+let
+    funcao = 
+
+    // ====================================== COMEÇA FUNÇÃO ======================================
+
 (
     Sections, // informar -->> #sections[Section1]
     optional ListaTabelasDesconsiderar as list
@@ -105,3 +106,39 @@ let
 
 in
     TabelasCombinadas
+
+    // ====================================== TERMINOU FUNÇÃO ======================================
+
+
+    // ====================================== METADADOS DA FUNÇÃO ==================================
+
+    , metadados = [
+        Documentation.Name  = "fxVerificaErro",
+        Documentation.Description = "Essa função será útil para criar uma tabela nomeada 'fxVerificaErro_Resumo' com resumo de todos os erros na seção do Power Query",
+        Documentation.Examples = {
+
+            // exemplo 01
+            [
+                Description = "Exemplo 01",
+                Code = "fxVerificaErro(#sections[Section1], null)",
+                Result = "
+                ================ IMPORTANTE ================
+
+                Ao Invocar a Função fxVerificaErro deverá ser alterado o nome da Consulta Invocada para 'fxVerificaErro_Resumo', dessa forma a tabela será desconsiderada da seção, caso contrário haverá estouro de pilha ou looping eterno.
+                
+                Name        | Detail   |   Message
+                Consulta1   | Record   |   Não conseguimos aplicar o operador * aos tipos Number e Text.
+                
+                "
+            ]
+        }
+    ]
+
+in
+
+    Value.ReplaceType(
+        funcao,
+        Value.ReplaceMetadata(
+            Value.Type(funcao),metadados
+        )
+    )
