@@ -35,7 +35,7 @@ in
 - [x] Excel
 
 ~~~~js 
-    Expression.Evaluate(Script.#shared)
+    Expression.Evaluate(Script,#shared)
 ~~~~
     
 - [ ] Power BI
